@@ -35,10 +35,10 @@ export default class Applicant_navbar extends Component {
                                 <Link to="/my_applications" className="nav-link">My Applications</Link>
                             </li>
                             <li className="navbar-item">
-                                <a href="https://forms.gle/wGpgZmhnrfjiLWCv5" className="nav-link">Find Mentor</a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfKnu9AupyBB9k7EdfbcZX9PxAaVOuJ5l1laAvWa48iW9VCw/viewform" className="nav-link">Find Mentor</a>
                             </li>
                             <li className="navbar-item">
-                                <a href="https://forms.gle/1Ymetm8eck4n51vP9" className="nav-link">Be A Mentor</a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe9VyvH3zJZFAnKyfzHu3b7RusK_hb2ttPlwnfQmiPTpZHGvQ/viewform" className="nav-link">Be A Mentor</a>
                             </li>
 
                             <li className="navbar-item">
