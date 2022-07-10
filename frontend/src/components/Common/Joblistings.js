@@ -58,11 +58,11 @@ export default class Joblistings extends Component {
                 <table className="table table-striped">
                     <thead>
                         <tr>
-                            <th>title</th>
-                            <th>date of posting</th>
-                            <th>number of applicants</th>
-                            <th>maximum number of positions</th>
-                            <th>delete</th>
+                            <th>Title</th>
+                            <th>Date of Posting</th>
+                            <th>Number of Applicants</th>
+                            <th>Maximum Number of Positions</th>
+                            <th>Delete</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -125,7 +125,7 @@ export default class Add_job extends React.Component {
             <div>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
-                        <label>job title: </label>
+                        <label>Job title: </label>
                         <input type="text" 
                                className="form-control" 
                                value={this.state.title}
@@ -134,7 +134,7 @@ export default class Add_job extends React.Component {
                     </div>
                     
                     <div className="form-group">
-                        <label>maximum number of positions: </label>
+                        <label>Maximum number of positions: </label>
                         <input type="number" min="1"
                                className="form-control" 
                                value={this.state.max_positions}
@@ -142,7 +142,7 @@ export default class Add_job extends React.Component {
                                />  
                     </div>
                     <div className="form-group">
-                        <label>maximum number of applications you want: </label>
+                        <label>Maximum number of applications you want: </label>
                         <input type="number" min="1"
                                className="form-control" 
                                value={this.state.max_applications}
@@ -151,7 +151,7 @@ export default class Add_job extends React.Component {
                     </div>
 
                     <div className="form-group">
-                        <label>deadline of application: </label>
+                        <label>Deadline of application: </label>
                         <input type="datetime-local" 
                                className="form-control" 
                                value={this.state.deadline_of_application}
@@ -160,7 +160,7 @@ export default class Add_job extends React.Component {
                     </div>
 
                     <div className="form-group">
-                        <label>skills required: </label>
+                        <label>Skills required: </label>
                         <input type="text" 
                                className="form-control" 
                                value={this.state.required_skills}
@@ -180,7 +180,7 @@ export default class Add_job extends React.Component {
                     </div>
 
                     <div className="form-group">
-                        <label>duration (Months): </label>
+                        <label>Duration (Months): </label>
                         <div className="form-group">
                             <select className="form-control"  onChange={this.onChangeduration} value={this.state.duration}>
                                 <option value="0">0</option>
@@ -195,7 +195,7 @@ export default class Add_job extends React.Component {
                     </div>
 
                     <div className="form-group">
-                        <label>salary (in interger): </label>
+                        <label>Salary (in interger): </label>
                         <input type="number" min="1"
                                className="form-control" 
                                value={this.state.salary_per_month}

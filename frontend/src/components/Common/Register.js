@@ -10,6 +10,7 @@ import Avatar from '@material-ui/core/Avatar';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import Image from './com_reg.jpg';
 
 
 export default class Register extends Component {
@@ -56,7 +57,11 @@ export default class Register extends Component {
 
         this.onChangeimage = this.onChangeimage.bind(this);
         this.onChangecv = this.onChangecv.bind(this);
-        document.body.style = 'background: #F6CDDD;';
+        //document.body.style = 'background: #F6CDDD;';
+        document.body.style.backgroundImage = `url(${Image})`;
+        document.body.style.backgroundRepeat= "no-repeat";
+        document.body.style.backgroundSize= "1260px 1250px";
+        
     }
     
     validateEmail(e) {
@@ -270,36 +275,37 @@ export default class Register extends Component {
         if(this.state.type === "applicant"){
             divi = 
             <div>
-                <div className="form-group">
-                    <label>languages that you are comfortable in : </label>
+                <div className="form-group" >
+                    <label style={{color:"black", fontWeight: "bold"}}>Skills : </label>
+                    
                     <input type="text" 
                         className="form-control" 
                         value={this.state.list_of_languages}
                         onChange={this.onChangelist_of_languages}
                     />
                     <form>
-                        <div className="form-group">
-                            <h3>add education</h3>
-                            <label>Institution: </label>
+                        <div className="form-group" style={{marginTop:10+'px'}}>
+                            <h3>Add Experience</h3>
+                            <label style={{color:"black", fontWeight: "bold"}}>Organization: </label>
                             <input type="text" 
                                className="form-control" 
                                value={this.state.institution}
                                onChange={this.onChangeInstitution}
                             />  
-                            <label>Start Year: </label>
+                            <label style={{color:"black", fontWeight: "bold"}}>Start Year: </label>
                             <input type="text" 
                             className="form-control" 
                             value={this.state.startyear}
                             onChange={this.onChangeStartyear}
                             />
-                            <label>End Year: </label>
+                            <label style={{color:"black", fontWeight: "bold"}}>End Year: </label>
                             <input type="text" 
                                className="form-control" 
                                value={this.state.endyear}
                                onChange={this.onChangeEndyear}
                             />
                             <div className="form-group">
-                            <div className="form-group">
+                            <div className="form-group" style={{marginTop:10+'px'}}>
                                 <input type="submit" value="ADD" className="btn btn-primary" onClick={this.onSubmitEdu}/>
                             </div>
                             {/* <label>Select profile photo:</label> */}
@@ -336,7 +342,7 @@ export default class Register extends Component {
             divi =
             <div> 
                 <div className="form-group">
-                    <label>contact number: </label>
+                    <label style={{color:"black", fontWeight: "bold"}}>Contact Number: </label>
                     <input type="number" 
                         className="form-control" 
                         value={this.state.contact_number}
@@ -344,7 +350,7 @@ export default class Register extends Component {
                         />  
                 </div>
                 <div className="form-group">
-                <label>bio: </label>
+                <label style={{color:"black", fontWeight: "bold"}}>Bio: </label>
                 <input type="text" 
                     className="form-control" 
                     value={this.state.bio_recruiter}
@@ -354,10 +360,13 @@ export default class Register extends Component {
             </div>
         }
         return (
+            
             this.state.success == 1 ? window.location.href='/login' :
             <Container  component="main" maxWidth="xs">
                 <CssBaseline /> 
-                <div className="form-group"/>
+                
+                <div className="form-group" />
+                
                 {/* </div>                */}
                 <div style={{paddingLeft:170}}>              
                     <Avatar />                    
@@ -366,7 +375,7 @@ export default class Register extends Component {
                 <div>
                     <form onSubmit={this.onSubmit}>
                         <div className="form-group">
-                            <label>Username: </label>
+                            <label style={{color:"black", fontWeight: "bold"}}>Username: </label>
                             <input type="text" 
                                 className="form-control" 
                                 value={this.state.name}
@@ -374,7 +383,7 @@ export default class Register extends Component {
                                 />
                         </div>
                         <div className="form-group">
-                            <label>Email: </label>
+                            <label style={{color:"black", fontWeight: "bold"}}>Email: </label>
                             <input type="text" 
                                 className="form-control" 
                                 value={this.state.email}
@@ -382,7 +391,7 @@ export default class Register extends Component {
                                 />  
                         </div>
                         <div className="form-group">
-                            <label>Password: </label>
+                            <label style={{color:"black", fontWeight: "bold"}}>Password: </label>
                             <input type="text" 
                                 className="form-control" 
                                 value={this.state.password}
@@ -390,21 +399,22 @@ export default class Register extends Component {
                                 />  
                         </div>
                         <div className="form-group">
-                            <label>Type</label>
+                            <label style={{color:"black", fontWeight: "bold"}}>Type</label>
                             <div className="form-group">
                                 {/* <p>(don't be lazy and do not think applicant is selected so you dont have to select that.)</p> */}
                                 {/* <br></br> */}
                                 <select className="form-control"  onChange={this.onChangetype} value={this.state.type}>
                                     {/* <option value="0">pick type</option> */}
-                                    <option value="applicant">applicant</option>
-                                    <option value="recruiter">recruiter</option>
+                                    <option value="applicant">Applicant</option>
+                                    <option value="recruiter">Recruiter</option>
                                 </select>
                             </div>
                         </div>
                         <div>
                             {divi}
                         </div>
-                        <div className="form-group">
+                        <div className="form-group" style={{marginLeft:160+'px'}}>
+                        
                             <input type="submit" value="Register" className="btn btn-primary"/>
                         </div>
                     </form>

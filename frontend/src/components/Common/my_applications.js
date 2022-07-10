@@ -52,11 +52,11 @@ export default class My_applications extends Component {
                 <table className="table table-striped">
                     <thead>
                         <tr>
-                            <th>job title</th>
-                            <th>date of joining</th>
-                            <th>salary per month</th>
-                            <th>status of job</th>
-                            <th>rate</th>
+                            <th>Job Title</th>
+                            <th>Date of Joining</th>
+                            <th>Salary per Month</th>
+                            <th>Status of Job</th>
+                            <th>Rate</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -221,22 +221,22 @@ export default class Profileedit_recruiter extends React.Component {
                     <img src={'http://localhost:4000/image/' + localStorage.getItem('user_image')} width='300' height='400'/>
                 </Card>
                 <div className="form-group">
-                    <label>name : </label>
+                    <label>Name : </label>
                     <input type="text" 
                         className="form-control" 
                         value={this.state.name}
                         onChange={this.onChangename}
                     />
-                    <label>languages that you are comfortable in : </label>
+                    <label>Skills : </label>
                     <input type="text" 
                         className="form-control" 
                         value={this.state.list_of_languages}
                         onChange={this.onChangelist_of_languages}
                     />
                     <form onSubmit={this.onSubmit} >
-                        <div className="form-group">
-                            <h3>add education</h3>
-                            <label>Institution: </label>
+                        <div className="form-group" style={{marginTop:10+'px'}}>
+                            <h3>Add Education</h3>
+                            <label>Organization: </label>
                             <input type="text" 
                                className="form-control" 
                                value={this.state.education.length ==0 ? console.log("yes"):this.state.education[0].institution}
@@ -258,7 +258,7 @@ export default class Profileedit_recruiter extends React.Component {
                             <div className="form-group">
                                 <input type="submit" value="ADD" className="btn btn-primary" onClick={this.onSubmitEdu}/>
                             </div>
-                            <label>Select profile photo:</label>
+                            <label>Select Profile Photo : </label>
                             {/* <br></br>
                             <br></br> */}
                                 <input
@@ -270,7 +270,7 @@ export default class Profileedit_recruiter extends React.Component {
                                 ></input>
                             </div>
                             <div className="form-group">
-                            <label>upload cv</label>
+                            <label>Upload CV : </label>
                             {/* <br></br>
                             <br></br> */}
                                 <input

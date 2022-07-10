@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"
+import { NavLink } from 'react-router-dom';
 
 export default class NavBar extends Component {
     
@@ -25,10 +26,10 @@ export default class NavBar extends Component {
                                 <Link to="/users" className="nav-link">Users</Link>
                             </li> */}
                             <li className="navbar-item" >
-                                <Link to="/register" className="nav-link" style={{color:"black", fontSize: 25 +'px'}}>Register</Link>
+                                <NavLink  to="/register" className="nav-link" activeClassName="active" activeStyle={{color: "#cf842d", fontWeight: "bold"}} style={{fontSize: 25 +'px'}}>Register</NavLink>
                             </li>
                             <li className="navbar-item">
-                                <Link to="/login" className="nav-link" style={{color:"black", fontSize: 25 +'px'}}>Login</Link>
+                                <NavLink to="/login" className="nav-link" activeClassName="active" activeStyle={{color: "#cf842d", fontWeight: "bold"}} style={{fontSize: 25 +'px'}}>Login</NavLink>
                             </li>
                             {/* <li className="navbar-item">
                                 <Link to="/profile" className="nav-link">My Profile</Link>

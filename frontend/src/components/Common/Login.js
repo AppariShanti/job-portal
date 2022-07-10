@@ -16,7 +16,7 @@ export default class Login extends Component {
             email: '',
             password: ''
         }
-        document.body.style = 'background: #F6CDDD;';
+        document.body.style = 'background-image: require("frontend/src/components/Common/login.jpg");';
 
         this.onChangeEmail = this.onChangeEmail.bind(this);
         this.onChangePassword = this.onChangePassword.bind(this);
@@ -44,7 +44,7 @@ export default class Login extends Component {
             var temper = bcrypt.compareSync(userAdd.password,res.data.password);
             console.log(res);
             if (res.data.email===userAdd.email && temper) {
-                alert("hii");
+                
                 console.log(res.data);
                 localStorage.setItem('user_type', res.data.type);
                 localStorage.setItem('user_name', res.data.name);
@@ -83,9 +83,11 @@ export default class Login extends Component {
 
     render() {
         return (
+            
              < div className="login">
                 
                 <div className="quote" style={{marginTop:20+'px',fontFamily:"sans-serif"}}> Login</div>  
+                <img src={require('./women-technology-02-1.png')}  width="1110" height="800" style={{marginTop:-130+'px'}}></img>
                 <form onSubmit={this.addUser} method="user">
                 <div className="hero-text">
                
