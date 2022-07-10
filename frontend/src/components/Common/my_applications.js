@@ -11,6 +11,8 @@ export default class My_applications extends Component {
         this.state = {
             listings: []
         }
+        document.body.style = 'background: #F6CDDD;';
+
     }
 
     componentDidMount() {

@@ -6,6 +6,7 @@ export default class Applicant_navbar extends Component {
     
     constructor(props) {
         super(props);
+        document.body.style = 'background: #F6CDDD;';
     }
 
     render() {
@@ -14,20 +15,34 @@ export default class Applicant_navbar extends Component {
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     <div className="collapse navbar-collapse">
                         <ul className="navbar-nav mr-auto">
+                        <a class="navbar-brand" href="#">
+      <img src={require('./logo.png')} alt="" width="200" height="60" class="d-inline-block align-text-top"></img>
+      
+    </a>
                             <li className="navbar-item">
                                 <Link to="/login" className="nav-link" onClick={() => {localStorage.clear();
                                 window.location.href="/login";}}>Logout</Link>
                             </li>
                             <li className="navbar-item">
-                                <Link to="/profileedit_applicant" className="nav-link">My applicant Profile</Link>
+                                <Link to="/profileedit_applicant" className="nav-link">My Applicant Profile</Link>
                             </li>
 
                             <li className="navbar-item">
-                                <Link to="/search_job" className="nav-link">all the jobs</Link>
+                                <Link to="/search_job" className="nav-link">View Jobs</Link>
                             </li>
 
                             <li className="navbar-item">
-                                <Link to="/my_applications" className="nav-link">my applications</Link>
+                                <Link to="/my_applications" className="nav-link">My Applications</Link>
+                            </li>
+                            <li className="navbar-item">
+                                <a href="https://forms.gle/wGpgZmhnrfjiLWCv5" className="nav-link">Find Mentor</a>
+                            </li>
+                            <li className="navbar-item">
+                                <a href="https://forms.gle/1Ymetm8eck4n51vP9" className="nav-link">Be A Mentor</a>
+                            </li>
+
+                            <li className="navbar-item">
+                                <a href="https://relevel.com/" className="nav-link">Skill-O-Meter</a>
                             </li>
 
                         </ul>

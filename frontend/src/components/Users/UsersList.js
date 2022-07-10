@@ -28,6 +28,8 @@ class UsersList extends Component {
         this.state = {users: [],sortedUsers: [], sortName:true};
         this.renderIcon = this.renderIcon.bind(this);
         this.sortChange = this.sortChange.bind(this);
+        document.body.style = 'background: #F6CDDD;';
+
     }
 
     componentDidMount() {

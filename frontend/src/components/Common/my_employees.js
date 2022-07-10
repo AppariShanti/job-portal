@@ -7,6 +7,8 @@ export default class My_employees extends Component {
     
     constructor(props) {
         super(props);
+        document.body.style = 'background: #F6CDDD;';
+
         // this.deletejob = this.deletejob.bind(this)
         this.state = {
             listings: []

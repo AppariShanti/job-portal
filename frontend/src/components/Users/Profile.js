@@ -20,6 +20,8 @@ class Profile extends Component {
     constructor(props) {
         super(props);
         this.state = {users: [],sortName:true};
+        document.body.style = 'background: #F6CDDD;';
+
         // this.sortClicked = this.sortClicked.bind(this);
         // this.renderIcon = this.renderIcon.bind(this);
         // this.sortChange = this.sortChange.bind(this);

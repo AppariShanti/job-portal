@@ -8,7 +8,10 @@ export default class Home extends Component {
         this.state = {
             name:'',
             email:''
+
         }
+        document.body.style = 'background: #F6CDDD;';
+
     }
 
     componentDidMount() {

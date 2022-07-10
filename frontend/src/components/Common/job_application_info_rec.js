@@ -30,6 +30,8 @@ export default class Job_application_info extends Component {
         this.shortlist = this.shortlist.bind(this);
         this.accept = this.accept.bind(this);
         this.reject = this.reject.bind(this);
+        document.body.style = 'background: #F6CDDD;';
+
     }
 
     onChangesop(event){

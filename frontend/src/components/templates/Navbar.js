@@ -6,6 +6,8 @@ export default class NavBar extends Component {
     
     constructor(props) {
         super(props);
+        document.body.style = 'background: #F6CDDD;';
+
     }
 
     render() {

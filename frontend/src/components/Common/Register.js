@@ -56,6 +56,7 @@ export default class Register extends Component {
 
         this.onChangeimage = this.onChangeimage.bind(this);
         this.onChangecv = this.onChangecv.bind(this);
+        document.body.style = 'background: #F6CDDD;';
     }
     
     validateEmail(e) {

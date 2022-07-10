@@ -12,6 +12,7 @@ export default class Add_job extends React.Component {
     
     constructor(props) {
         super(props);
+        document.body.style = 'background: #F6CDDD;';
 
         this.state = {
             title: '',
@@ -179,7 +180,7 @@ export default class Add_job extends React.Component {
                     </div>
 
                     <div className="form-group">
-                        <label>duration: </label>
+                        <label>duration (Months): </label>
                         <div className="form-group">
                             <select className="form-control"  onChange={this.onChangeduration} value={this.state.duration}>
                                 <option value="0">0</option>

@@ -9,6 +9,7 @@ export default class Job_info extends Component {
     
     constructor(props) {
         super(props);
+        document.body.style = 'background: #F6CDDD;';
 
         this.state = {
             applied_jobs:[],

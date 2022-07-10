@@ -20,6 +20,8 @@ export default class View_job_listings_applicant extends Component {
             salary_upper:'',
             applied_jobs:[]
         }
+        document.body.style = 'background: #F6CDDD;';
+
         this.onChangeSearch = this.onChangeSearch.bind(this);
         this.sortbyratinginc = this.sortbyratinginc.bind(this);
         this.sortbyratingdec = this.sortbyratingdec.bind(this);

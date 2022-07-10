@@ -38,7 +38,8 @@ export default class Profileedit_recruiter extends React.Component {
             // contact_number:'',
             name:''
         }
-        
+        document.body.style = 'background: #F6CDDD;';
+
         this.onSubmit = this.onSubmit.bind(this);
         this.onChangelist_of_languages = this.onChangelist_of_languages.bind(this);
         this.onChangeimage = this.onChangeimage.bind(this);

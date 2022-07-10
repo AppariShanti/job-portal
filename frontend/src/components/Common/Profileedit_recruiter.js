@@ -18,6 +18,7 @@ export default class Profileedit_recruiter extends React.Component {
     
     constructor(props) {
         super(props);
+        document.body.style = 'background: #F6CDDD;';
 
         this.state = {
          

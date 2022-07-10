@@ -13,6 +13,8 @@ export default class Joblistings extends Component {
         this.state = {
             listings: []
         }
+        document.body.style = 'background: #F6CDDD;';
+
     }
 
     componentDidMount() {
